@@ -1,0 +1,99 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url(../img/bg-1.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.headline {
+    font-size: 20px;
+    color:rgb(159, 10, 10);
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.width-3 {
+    width: 3px;
+}
+
+.marginleft {
+    margin-left: 1.5rem;
+}
+
+.width31 {
+    width: 31%;
+    padding-top:15px;
+}
+
+.maindiv {
+    background: #fff;
+    border-radius: 6px;;
+    opacity: 0.99;
+}
+
+.maindiv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2000px;
+  opacity: .05;
+  z-index: -1;
+  background: url(../img/bg-2.png) repeat-y fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 25% 85%;
+}
+
+.profile-image {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.profile {
+    font-size: 16px;
+    color: rgb(8, 123, 255);
+}
+
+.compName {
+    font-size: 16px;
+}
+
+.duration {
+    font-size: 14px;
+    color:#66;
+}
+
+.location {
+    font-size: 14px;
+    color: #999;
+}
+
+.roles {
+    text-align:left;
+    font-size: 14px;
+    color:#333;
+}
+
+.subtitle {
+    font-size: 14px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #999;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.summary {
+    font-size: 14px;
+    padding: 4px;
+}
