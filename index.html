@@ -13,6 +13,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <link href="assets/css/style.css" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <script type="text/javascript">
 const roles = [
   "✓ Sprint Planning, Goal Setting, and KPIs",
@@ -98,61 +100,61 @@ const jobs = [{
   "profile" : "Sr. Engineering Manager",
   "compName": "Triller India Pvt. Ltd.",
   "duration": "Jan 2019 - Present (4 years +)",
-  "img"     : "",
+  "img"     : "triller.png",
   "location": "Gurgaon, India"
 }, {
   "profile" : "Technical Project Manager",
   "compName": "The Office Pass",
   "duration": "Nov 2016 - Dec 2018 (2 years 2 months)",
-  "img"     : "",
+  "img"     : "top.png",
   "location": "Gurgaon, India"
 }, {
   "profile" : "Head Of Technology",
   "compName": "Car Tiger Pvt. Ltd.",
   "duration": "May 2015 - Feb 2016 (10 months)",
-  "img"     : "",
+  "img"     : "cartiger.png",
   "location": "Noida, India"
 }, {
   "profile" : "Founder and CEO",
   "compName": "GiftExpert.in",
   "duration": "Jun 2013 - Oct 2016 (3 years 5 months)",
-  "img"     : "",
+  "img"     : "giftexpert.png",
   "location": "Delhi, India"
 }, {
   "profile" : "Engineering Manager",
   "compName": "Uday Homz Pvt. Ltd.",
   "duration": "Apr 2014 - Apr 2015 (1 year 1 month)",
-  "img"     : "",
+  "img"     : "udayhomz.png",
   "location": "Gurgaon, India"
 }, {
   "profile" : "Technical Project Manager",
   "compName": "PropTiger.com",
   "duration": "Apr 2011 - May 2013 (2 yrs 2 months)",
-  "img"     : "",
+  "img"     : "proptiger.png",
   "location": "Gurgaon, India"
 }, {
   "profile" : "Development Team Lead",
   "compName": "Makaan.com",
   "duration": "Apr 2007 - Apr 2011 (4 yrs 1 months)",
-  "img"     : "",
+  "img"     : "makaan.png",
   "location": "Gurgaon, India"
 }, {
   "profile" : "Development Team Lead",
   "compName": "Broadway Infotech Pvt. Ltd.",
   "duration": "May 2006 - Apr 2007 · 1 yr",
-  "img"     : "",
+  "img"     : "bwinfotech.png",
   "location": "Noida, India"
 }, {
   "profile" : "Software Engineer",
   "compName": "CreativeSkulls",
   "duration": "Apr 2005 - Apr 2006  (1 yr 1 month)",
-  "img"     : "",
+  "img"     : "cs.png",
   "location": "Delhi, India"
 }, {
   "profile" : "Web Developer",
   "compName": "4Cplus Internet Pvt. Ltd.",
   "duration": "Aug 2004 - Apr 2005 · 9 months",
-  "img"     : "",
+  "img"     : "4cplus.png",
   "location": "Delhi, India"
 }];
 
@@ -162,10 +164,13 @@ const expDOM = function() {
     divString += `
       <div class="mb-2 mt-2 border-bottom"></div>
       <div class="mt-3">
-        <div class="profile">${element.profile}</div>
-        <div class="compName">${element.compName}</div>
-        <div class="duration">${element.duration}</div>
-        <div class="location">${element.location}</div>
+        <div class="col-1 float-start"><img src="/assets/img/${element.img}" class="complogo"></div>
+        <div class="col-12 marginl2">
+          <div class="profile">${element.profile}</div>
+          <div class="compName">${element.compName}</div>
+          <div class="duration">${element.duration}</div>
+          <div class="location">${element.location}</div>
+        </div>
       </div>`;
   });
   return divString;
@@ -229,10 +234,10 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="col-8 mt-4 marginleft">
                 <div class="headline">Mohammad Saleem</div>
                 <div class="profile"> Sr. Engineering Manager</div>
-                <div class="subtitle">Total Experience: 18+ Yrs</div>
-                <div class="subtitle">Contact: saleem2005ji@gmail.com</div>
-                <div class="subtitle">Mobile: 9818389496</div>
-                <div class="subtitle">Location: Delhi</div>
+                <div class="subtitle"><i class="fa fa-thin fa-calendar-o"></i>  Total Experience: 18+ Yrs</div>
+                <div class="subtitle"><i class="fa fa-thin fa-envelope-o"></i>  Contact: saleem2005ji@gmail.com</div>
+                <div class="subtitle"><i class="fa fa-thin fa-phone"></i>  Mobile: 9818389496</div>
+                <div class="subtitle"><i class="fa fa-thin fa-globe"></i>  Location: Delhi</div>
             </div>
 
             <div class="col-3 text-end marginleft mt-3">

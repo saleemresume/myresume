@@ -25,6 +25,9 @@ body {
 .marginleft {
     margin-left: 1.5rem;
 }
+.marginl2 {
+    margin-left: 2.5rem;
+}
 
 .width31 {
     width: 31%;
@@ -101,4 +104,11 @@ hr {
 .summary {
     font-size: 14px;
     padding: 4px;
+}
+
+.complogo {
+    width: 100%;
+    max-height:40px;
+    border: 1px solid lightblue;
+    border-radius: 50%;
 }
