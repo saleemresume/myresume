@@ -37,7 +37,8 @@ const roles = [
   "✓ Responsibility of Technology upgrades and migrations",
   "✓ IT Strategy, Infrastructure Setup, and IT Vendor Management",
   "✓ Manage, support, and evaluate engineers",
-  "✓ Build the entire technical documentation and project roadmap"
+  "✓ Keep clear communication with stakeholders",
+  "✓ Build the entire technical documentation and project road map"
 ];
 
 const academic = [
@@ -184,8 +185,8 @@ const academicDOM = function() {
   let divString = "";
   academic.forEach((element, index, array) => {
     divString += `
-      <div class="mb-1 mt-1 border-bottom"></div>
-      <div class="mt-3">
+      <div class="pb-2 mt-1 border-bottom"></div>
+      <div class="mt-2">
         <div class="profile">${element.course}</div>
         <div class="compName">${element.institution}, ${element.location}</div>
         <div class="duration">${element.duration}</div>
@@ -242,11 +243,15 @@ document.addEventListener("DOMContentLoaded", () => {
               <img src="./assets/img/resume.png" class="profile-image"/>
             </div>
           </div>
-          <dov><hr/></dov>
+          <div class="d-flex justify-content-center align-items-center">
+              <div class="m-2 w-100 border-style"></div>
+          </div>
           <div class="summary subtitle marginleft lhsm">
               I have over <span class="highlight">18+ years of experience</span> as a engineering manager and have implemented CRM, SAAS, several tools, mobile websites, apps and websites. I am a focused, committed, and technical engineering leader who has <span class="highlight">worked with 9+ startups</span> and lead their technology. I mentored a <span class="highlight">maximum of 15 member team</span> of developers, designers, testers, and production engineers. I have also monitored the organization's HR, Operations, and Admin functions. I run my <span class="highlight">own self funded startup</span> in gifting space till 3.5 year.
           </div>
-          <dov><hr/></dov>
+          <div class="d-flex justify-content-center align-items-center">
+              <div class="m-2 w-100 border-style"></div>
+          </div>
           <div class="row mt-2">
             <div class="col-5 mb-4 marginleft">
                 <div class="headline">Work Experience</div>
@@ -273,7 +278,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div id="rolesDOM" class="mt-2">
 
                     </div>
-                    <div class="mb-2 mt-3"></div>
+                    <div class="mt-2"></div>
                 </div>
 
                 <div class="row mt-2 marginleft">
@@ -281,7 +286,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div id="qualificationDOM" class="mt-2">
 
                     </div>
-                    <div class="mb-2 mt-3"></div>
+                    <div class="mt-3"></div>
                 </div>
 
                 <div class="row mt-2 marginleft">
@@ -289,7 +294,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div id="achievementDOM" class="mt-2">
 
                     </div>
-                    <div class="mb-2 mt-3"></div>
+                    <div class="mt-3"></div>
                 </div>
 
                 <div class="row mt-2 marginleft">
